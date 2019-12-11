@@ -1,0 +1,23 @@
+- hosts: test-servers
+  become: true
+  tasks: 
+  - name: Node.js
+    get_url:
+    url: "http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_15.0 node10"
+    dest: "{{ var_node }}/nodejs.sh"
+  - name: Node.js - Set execution permission to script
+    file:
+     path: "{{ var_node }}/nodejs.sh"
+     mode: "u+x"
+  - name: Install nodejs
+    zypper: nodejs
+    state: present
+    update_cache: yes
+    with_items:
+    - build-essential
+    - nodejs
+
+   -name: Install npm
+    zypper: npm
+    state: present
+    update_cache: yes
