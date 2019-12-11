@@ -1,0 +1,54 @@
+1.GitHub Excecise
+=> Created GitHub account
+=> Created Private repository with name "adp-mkpl-test-nagaraju"
+=> Created helloworld.txt and Readme.md files and commited 
+=> Code check-in commands 
+git config --global user.name "nagarajukurella92"
+git config --global user.email nagarajukurella92@gmail.com
+git add .
+git commit -m "commit massage "
+git push origin master
+
+2.jenkins master setup
+=> Created Free AWS Account 
+=> Lanched 2 AWS instances with suse-12 AMI
+=> 1 is jenkins master and 2 is jenkins slave server
+=> installed the java on both the machines
+=> installed the jenkins master server(13.126.82.177)
+=>Jenkins Slave node is (13.233.237.197) 
+=>Jenkins slave configuration manage jenkins => manage nodes => Select New Node
+=>communication between the master and slave is ssh protocal
+=> Jenkins initial password 
+0211e5b2cf064a878f0fa8b1ef1769cb
+=> Slave node details
+useradd jenkins
+sudo passwd jenkins
+Username: jenkins
+Password: jenkins
+And created the job checkout the code and excuted on the slave node.
+
+Jenkins Installaion and master slave setup Refered Documents links
+
+https://www.osradar.com/install-jenkins-opensuse-15-suse-15/
+https://devopscube.com/setup-slaves-on-jenkins-2/
+
+3.Ansible 
+
+ansible Control server (13.126.82.177) 
+Ansible remote server (13.233.237.197)
+=> Installed python 2.x on both Machines
+=> CrePassword less authetification between the servers
+=> Pushed the playbook into master branch of the git repo
+=>ansible playbook configured on jenkins server
+
+Ansible installation and configuration refered docs
+
+https://coderwall.com/p/djpcxa/how-to-install-ansible-on-sles-11
+
+
+
+4.Bonus Exercise 
+
+=> Created the terraform script for spin-up the EC2 Instartnce 
+=> Created the terraform script for Delete the instance
+=> Created the terraform script for create the s3 Bucket  
