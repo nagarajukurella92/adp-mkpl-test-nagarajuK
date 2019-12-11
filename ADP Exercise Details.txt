@@ -1,6 +1,6 @@
 1.GitHub Excecise
 => Created GitHub account
-=> Created Private repository with name "adp-mkpl-test-nagaraju"
+=> Created Private repository with name "adp-mkpl-test-nagarajuK"
 => Created helloworld.txt and Readme.md files and commited 
 => Code check-in commands 
 git config --global user.name "nagarajukurella92"
