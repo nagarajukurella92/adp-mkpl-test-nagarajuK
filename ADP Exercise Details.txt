@@ -52,3 +52,8 @@ https://coderwall.com/p/djpcxa/how-to-install-ansible-on-sles-11
 => Created the terraform script for spin-up the EC2 Instartnce 
 => Created the terraform script for Delete the instance
 => Created the terraform script for create the s3 Bucket  
+Terraform Commands
+terraform init
+terraform apply
+terraform destroy
+
