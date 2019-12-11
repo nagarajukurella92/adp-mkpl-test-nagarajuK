@@ -1,4 +1,4 @@
-- hosts: test-servers
+- hosts: Jenkins-slave
   become: true
   tasks: 
   - name: Node.js
